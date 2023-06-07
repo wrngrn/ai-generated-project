@@ -44,7 +44,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
       - name: Run Contrast SCA Audit
-        uses: 'Contrast-Security-OSS/contrast-sca-action@main'
+        uses: 'Contrast-Security-OSS/contrast-sca-action@continue-on-error'
         with:
           apiKey: ${{ secrets.CONTRAST_GITHUB_APP_API_KEY }}
           authHeader: ${{ secrets.CONTRAST_GITHUB_APP_AUTH_HEADER }}
