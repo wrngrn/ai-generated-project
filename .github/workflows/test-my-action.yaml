@@ -1,0 +1,11 @@
+name: Test my action
+on:
+  workflow_dispatch:
+  
+jobs:
+  test-action:
+    name: "Test my action"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: WG-test-action for testing release
+        uses: wrngrn/wg-test-action@v3
