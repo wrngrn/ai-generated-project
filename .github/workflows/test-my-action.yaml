@@ -11,5 +11,11 @@ jobs:
         uses: wrngrn/wg-test-action@v3
       - name: version v3.0.4
         uses: wrngrn/wg-test-action@v3.0.4
-      - name: version v3.1.0
+      - name: version v3.1.0 (unpublished)
         uses: wrngrn/wg-test-action@v3.1.0
+      - name: version invalid minor
+        uses: wrngrn/wg-test-action@v3.2.0
+      - name: version invalid patch
+        uses: wrngrn/wg-test-action@v3.0.54
+      - name: version invalid major
+        uses: wrngrn/wg-test-action@v42.0.0
