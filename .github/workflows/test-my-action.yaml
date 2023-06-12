@@ -7,11 +7,9 @@ jobs:
     name: "Test my action"
     runs-on: "ubuntu-latest"
     steps:
-      - name: version v3
-        uses: wrngrn/wg-test-action@v3
-      - name: version v3.0.4
-        uses: wrngrn/wg-test-action@v3.0.4
-      - name: version v3.1.0 (unpublished minor)
-        uses: wrngrn/wg-test-action@v3.1.0
-      - name: version unplublished major
+      - name: version v4
+        uses: wrngrn/wg-test-action@v4
+      - name: version v4.0.1
         uses: wrngrn/wg-test-action@v4.0.1
+      - name: version v4.1.0 (unpublished minor)
+        uses: wrngrn/wg-test-action@v4.1.0
